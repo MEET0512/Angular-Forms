@@ -1,0 +1,58 @@
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-5">
+        <form [formGroup]="registrationForm">
+          <h1 class="title has-text-centered">Registration Form</h1>
+          <div class="field">
+            <label for="username" class="label">UserName</label>
+            <div class="control">
+              <input type="text" formControlName="userName" class="input" name="username" id="">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input type="password" formControlName="password" class="input" name="username" id="">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Confirm Password</label>
+            <div class="control">
+              <input type="password" formControlName="confirmPassword" class="input" name="username" id="">
+            </div>
+          </div>
+
+          <div class="field" formGroupName="address">
+            <div class="field">
+              <label for="" class="label">City</label>
+              <div class="control">
+                <input type="text" formControlName="city" class="input" name="" id="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="" class="label">State</label>
+              <div class="control">
+                <input type="text" formControlName="state" class="input" name="" id="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="" class="label">Postal code</label>
+              <div class="control">
+                <input type="text" formControlName="postalCode" class="input" name="" id="">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="button is-success is-fullwidth">Register</button>
+          {{ registrationForm.value | json }}
+        </form> 
+       
+      </div>
+    </div>
+  </div>
+</section>
