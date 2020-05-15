@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-.input, .input:hover {
+.input {
     border-left: 5px solid blue;
+}
+
+.input .is-danger {
+    border-left: 5px solid red;
 }
